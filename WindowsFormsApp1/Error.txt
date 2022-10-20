@@ -1,0 +1,6 @@
+System.ArgumentOutOfRangeException: Индекс за пределами диапазона. Индекс должен быть положительным числом, а его размер не должен превышать размер коллекции.
+Имя параметра: index
+   в System.Collections.ArrayList.get_Item(Int32 index)
+   в System.Windows.Forms.DataGridViewRowCollection.SharedRow(Int32 rowIndex)
+   в System.Windows.Forms.DataGridViewRowCollection.get_Item(Int32 index)
+   в WindowsFormsApp1.Form1.bSelectChange_Click(Object sender, EventArgs e) в C:\3 курс\СУБД\Laba1\WindowsFormsApp1\Form1.cs:строка 236

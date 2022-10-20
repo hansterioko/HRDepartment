@@ -1,0 +1,58 @@
+E:\MEGA\Институт\По работе\По Учебе\СУБД\ЛБ\ЛР - SQLite\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+E:\MEGA\Институт\По работе\По Учебе\СУБД\ЛБ\ЛР - SQLite\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+E:\MEGA\Институт\По работе\По Учебе\СУБД\ЛБ\ЛР - SQLite\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+E:\MEGA\Институт\По работе\По Учебе\СУБД\ЛБ\ЛР - SQLite\WindowsFormsApp1\bin\Debug\EntityFramework.dll
+E:\MEGA\Институт\По работе\По Учебе\СУБД\ЛБ\ЛР - SQLite\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.dll
+E:\MEGA\Институт\По работе\По Учебе\СУБД\ЛБ\ЛР - SQLite\WindowsFormsApp1\bin\Debug\System.Data.SQLite.dll
+E:\MEGA\Институт\По работе\По Учебе\СУБД\ЛБ\ЛР - SQLite\WindowsFormsApp1\bin\Debug\System.Data.SQLite.EF6.dll
+E:\MEGA\Институт\По работе\По Учебе\СУБД\ЛБ\ЛР - SQLite\WindowsFormsApp1\bin\Debug\System.Data.SQLite.Linq.dll
+E:\MEGA\Институт\По работе\По Учебе\СУБД\ЛБ\ЛР - SQLite\WindowsFormsApp1\bin\Debug\EntityFramework.xml
+E:\MEGA\Институт\По работе\По Учебе\СУБД\ЛБ\ЛР - SQLite\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.xml
+E:\MEGA\Институт\По работе\По Учебе\СУБД\ЛБ\ЛР - SQLite\WindowsFormsApp1\bin\Debug\System.Data.SQLite.xml
+E:\MEGA\Институт\По работе\По Учебе\СУБД\ЛБ\ЛР - SQLite\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+E:\MEGA\Институт\По работе\По Учебе\СУБД\ЛБ\ЛР - SQLite\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+E:\MEGA\Институт\По работе\По Учебе\СУБД\ЛБ\ЛР - SQLite\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+E:\MEGA\Институт\По работе\По Учебе\СУБД\ЛБ\ЛР - SQLite\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+E:\MEGA\Институт\По работе\По Учебе\СУБД\ЛБ\ЛР - SQLite\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+E:\MEGA\Институт\По работе\По Учебе\СУБД\ЛБ\ЛР - SQLite\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+E:\MEGA\Институт\По работе\По Учебе\СУБД\ЛБ\ЛР - SQLite\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\kom_3\Desktop\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\kom_3\Desktop\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\kom_3\Desktop\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\kom_3\Desktop\WindowsFormsApp1\bin\Debug\EntityFramework.dll
+C:\Users\kom_3\Desktop\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kom_3\Desktop\WindowsFormsApp1\bin\Debug\System.Data.SQLite.dll
+C:\Users\kom_3\Desktop\WindowsFormsApp1\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\kom_3\Desktop\WindowsFormsApp1\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\kom_3\Desktop\WindowsFormsApp1\bin\Debug\EntityFramework.xml
+C:\Users\kom_3\Desktop\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kom_3\Desktop\WindowsFormsApp1\bin\Debug\System.Data.SQLite.xml
+C:\Users\kom_3\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\kom_3\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\kom_3\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\kom_3\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\kom_3\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\kom_3\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\kom_3\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\kom_3\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\kom_3\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\3 курс\Коллективная разработка программных продуктов\laba3\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\3 курс\Коллективная разработка программных продуктов\laba3\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+C:\3 курс\Коллективная разработка программных продуктов\laba3\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\3 курс\Коллективная разработка программных продуктов\laba3\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\3 курс\Коллективная разработка программных продуктов\laba3\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\3 курс\Коллективная разработка программных продуктов\laba3\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\3 курс\Коллективная разработка программных продуктов\laba3\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\3 курс\Коллективная разработка программных продуктов\laba3\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\3 курс\Коллективная разработка программных продуктов\laba3\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\3 курс\Коллективная разработка программных продуктов\laba3\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\3 курс\Коллективная разработка программных продуктов\laba3\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\3 курс\Коллективная разработка программных продуктов\laba3\WindowsFormsApp1\bin\Debug\EntityFramework.dll
+C:\3 курс\Коллективная разработка программных продуктов\laba3\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.dll
+C:\3 курс\Коллективная разработка программных продуктов\laba3\WindowsFormsApp1\bin\Debug\System.Data.SQLite.dll
+C:\3 курс\Коллективная разработка программных продуктов\laba3\WindowsFormsApp1\bin\Debug\System.Data.SQLite.EF6.dll
+C:\3 курс\Коллективная разработка программных продуктов\laba3\WindowsFormsApp1\bin\Debug\System.Data.SQLite.Linq.dll
+C:\3 курс\Коллективная разработка программных продуктов\laba3\WindowsFormsApp1\bin\Debug\EntityFramework.xml
+C:\3 курс\Коллективная разработка программных продуктов\laba3\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\3 курс\Коллективная разработка программных продуктов\laba3\WindowsFormsApp1\bin\Debug\System.Data.SQLite.xml
+C:\3 курс\Коллективная разработка программных продуктов\laba3\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
