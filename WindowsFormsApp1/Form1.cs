@@ -124,7 +124,7 @@ namespace WindowsFormsApp1
                     dt = new DataTable();
                     connection.Open();
                     SQLiteCommand command = new SQLiteCommand("select * from clients where firstname='" + tSelectName.Text + "'", connection);
-                   
+
                     tSelectName.Clear();
 
 
@@ -282,9 +282,42 @@ namespace WindowsFormsApp1
                 }
 
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void bChange_Click(object sender, EventArgs e)
+        {
+            if (tSurname.Text != "" && tName.Text != "" && tMiddlename.Text != "" && tCity.Text != "" && tStreet.Text != "" && tState.Text != "" && tIndex.Text != "")
+            {
+                try
+                {
+                    using (var connection = new SQLiteConnection("Data Source = TestDBSQLite1.db"))
+                    {
+                        connection.Open();
+
+                        SQLiteCommand Command = new SQLiteCommand("UPDATE clients SET lastname = '" + tSurname.Text + "', firstname = '" + tName.Text + "',middlename = '" + tMiddlename.Text + "',adress = '" + tStreet.Text + "',city = '" + tCity.Text + "',state = '" + tState.Text + "',zipcode = '" + tIndex.Text + "' WHERE id='" + id + "'", connection);
+
+                        if (Command.ExecuteNonQuery() == 0)
+                        {
+                            MessageBox.Show("Запись не была изменена!", "Изменение данных", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Запись успешно изменена!", "Изменение данных", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        ClearBoxes();
+                        LoadTable();
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Изменение данных", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                }
+
             }
         }
     }
