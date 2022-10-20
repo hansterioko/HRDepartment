@@ -175,6 +175,7 @@
             this.bChange.TabIndex = 16;
             this.bChange.Text = "Изменить";
             this.bChange.UseVisualStyleBackColor = true;
+            this.bChange.Click += new System.EventHandler(this.bChange_Click);
             // 
             // bDelete
             // 
