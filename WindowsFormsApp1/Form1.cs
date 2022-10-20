@@ -320,5 +320,53 @@ namespace WindowsFormsApp1
 
             }
         }
+
+        private void bDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (CheckCountSelect() > 1)
+                {
+                    MessageBox.Show("Выберите только 1 значение", "Удаление данных", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
+                }
+                else
+                {
+                    using (var connection = new SQLiteConnection("Data Source = C:/3 курс/TestDBSQLite1.db"))
+                    {
+                        connection.Open();
+                        if (dataGridView1.Rows[0].Cells[2].Value == null)
+                        {
+                            MessageBox.Show("Удаление невозможно,т.к в таблице нет строк для удаления!", "Удаление строк", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                        else
+                        {
+                            for (int i = 0; i < dataGridView1.RowCount; i++)
+                            {
+                                if (Convert.ToBoolean(dataGridView1.Rows[i].Cells["Select"].Value))
+                                {
+
+                                    int id = Convert.ToInt32(dataGridView1.Rows[i].Cells["id"].Value);
+                                    SQLiteCommand cmd = new SQLiteCommand("delete FROM clients WHERE id = '" + id + "'", connection);
+                                    cmd.ExecuteNonQuery();
+                                    dataGridView1.Rows.RemoveAt(i);
+                                }
+
+                            }
+
+                        }
+
+
+
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        
     }
 }

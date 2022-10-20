@@ -72,20 +72,18 @@
             // 
             // bCreate
             // 
-            this.bCreate.Location = new System.Drawing.Point(7, 22);
-            this.bCreate.Margin = new System.Windows.Forms.Padding(4);
+            this.bCreate.Location = new System.Drawing.Point(5, 18);
             this.bCreate.Name = "bCreate";
-            this.bCreate.Size = new System.Drawing.Size(201, 65);
+            this.bCreate.Size = new System.Drawing.Size(151, 53);
             this.bCreate.TabIndex = 0;
             this.bCreate.Text = "Создание БД";
             this.bCreate.UseVisualStyleBackColor = true;
             // 
             // bTable
             // 
-            this.bTable.Location = new System.Drawing.Point(7, 95);
-            this.bTable.Margin = new System.Windows.Forms.Padding(4);
+            this.bTable.Location = new System.Drawing.Point(5, 77);
             this.bTable.Name = "bTable";
-            this.bTable.Size = new System.Drawing.Size(201, 65);
+            this.bTable.Size = new System.Drawing.Size(151, 53);
             this.bTable.TabIndex = 1;
             this.bTable.Text = "Создание таблицы:";
             this.bTable.UseVisualStyleBackColor = true;
@@ -97,11 +95,10 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Select});
-            this.dataGridView1.Location = new System.Drawing.Point(13, 13);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Location = new System.Drawing.Point(10, 11);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(759, 338);
+            this.dataGridView1.Size = new System.Drawing.Size(569, 275);
             this.dataGridView1.TabIndex = 4;
             // 
             // Select
@@ -113,10 +110,9 @@
             // 
             // tNameTable
             // 
-            this.tNameTable.Location = new System.Drawing.Point(216, 138);
-            this.tNameTable.Margin = new System.Windows.Forms.Padding(4);
+            this.tNameTable.Location = new System.Drawing.Point(162, 112);
             this.tNameTable.Name = "tNameTable";
-            this.tNameTable.Size = new System.Drawing.Size(132, 22);
+            this.tNameTable.Size = new System.Drawing.Size(100, 20);
             this.tNameTable.TabIndex = 2;
             // 
             // gAddData
@@ -140,18 +136,21 @@
             this.gAddData.Controls.Add(this.label3);
             this.gAddData.Controls.Add(this.label2);
             this.gAddData.Controls.Add(this.label1);
-            this.gAddData.Location = new System.Drawing.Point(779, 13);
+            this.gAddData.Location = new System.Drawing.Point(584, 11);
+            this.gAddData.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gAddData.Name = "gAddData";
-            this.gAddData.Size = new System.Drawing.Size(276, 398);
+            this.gAddData.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gAddData.Size = new System.Drawing.Size(207, 323);
             this.gAddData.TabIndex = 5;
             this.gAddData.TabStop = false;
             this.gAddData.Text = "Добавление данных";
             // 
             // bOutputAll
             // 
-            this.bOutputAll.Location = new System.Drawing.Point(6, 343);
+            this.bOutputAll.Location = new System.Drawing.Point(4, 279);
+            this.bOutputAll.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bOutputAll.Name = "bOutputAll";
-            this.bOutputAll.Size = new System.Drawing.Size(270, 51);
+            this.bOutputAll.Size = new System.Drawing.Size(202, 41);
             this.bOutputAll.TabIndex = 9;
             this.bOutputAll.Text = "Вывод всех";
             this.bOutputAll.UseVisualStyleBackColor = true;
@@ -159,9 +158,10 @@
             // 
             // bSelectChange
             // 
-            this.bSelectChange.Location = new System.Drawing.Point(161, 284);
+            this.bSelectChange.Location = new System.Drawing.Point(121, 231);
+            this.bSelectChange.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bSelectChange.Name = "bSelectChange";
-            this.bSelectChange.Size = new System.Drawing.Size(115, 53);
+            this.bSelectChange.Size = new System.Drawing.Size(86, 43);
             this.bSelectChange.TabIndex = 17;
             this.bSelectChange.Text = "Выбрать для изменения";
             this.bSelectChange.UseVisualStyleBackColor = true;
@@ -169,9 +169,10 @@
             // 
             // bChange
             // 
-            this.bChange.Location = new System.Drawing.Point(6, 284);
+            this.bChange.Location = new System.Drawing.Point(4, 231);
+            this.bChange.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bChange.Name = "bChange";
-            this.bChange.Size = new System.Drawing.Size(115, 53);
+            this.bChange.Size = new System.Drawing.Size(86, 43);
             this.bChange.TabIndex = 16;
             this.bChange.Text = "Изменить";
             this.bChange.UseVisualStyleBackColor = true;
@@ -179,18 +180,21 @@
             // 
             // bDelete
             // 
-            this.bDelete.Location = new System.Drawing.Point(161, 225);
+            this.bDelete.Location = new System.Drawing.Point(121, 183);
+            this.bDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bDelete.Name = "bDelete";
-            this.bDelete.Size = new System.Drawing.Size(115, 53);
+            this.bDelete.Size = new System.Drawing.Size(86, 43);
             this.bDelete.TabIndex = 15;
             this.bDelete.Text = "Удалить";
             this.bDelete.UseVisualStyleBackColor = true;
+            this.bDelete.Click += new System.EventHandler(this.bDelete_Click);
             // 
             // bAdd
             // 
-            this.bAdd.Location = new System.Drawing.Point(6, 225);
+            this.bAdd.Location = new System.Drawing.Point(4, 183);
+            this.bAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bAdd.Name = "bAdd";
-            this.bAdd.Size = new System.Drawing.Size(115, 53);
+            this.bAdd.Size = new System.Drawing.Size(86, 43);
             this.bAdd.TabIndex = 14;
             this.bAdd.Text = "Добавить ";
             this.bAdd.UseVisualStyleBackColor = true;
@@ -198,113 +202,127 @@
             // 
             // tIndex
             // 
-            this.tIndex.Location = new System.Drawing.Point(78, 197);
+            this.tIndex.Location = new System.Drawing.Point(58, 160);
+            this.tIndex.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tIndex.Name = "tIndex";
-            this.tIndex.Size = new System.Drawing.Size(179, 22);
+            this.tIndex.Size = new System.Drawing.Size(135, 20);
             this.tIndex.TabIndex = 13;
             // 
             // tState
             // 
-            this.tState.Location = new System.Drawing.Point(78, 169);
+            this.tState.Location = new System.Drawing.Point(58, 137);
+            this.tState.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tState.Name = "tState";
-            this.tState.Size = new System.Drawing.Size(179, 22);
+            this.tState.Size = new System.Drawing.Size(135, 20);
             this.tState.TabIndex = 12;
             // 
             // tCity
             // 
-            this.tCity.Location = new System.Drawing.Point(78, 141);
+            this.tCity.Location = new System.Drawing.Point(58, 115);
+            this.tCity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tCity.Name = "tCity";
-            this.tCity.Size = new System.Drawing.Size(179, 22);
+            this.tCity.Size = new System.Drawing.Size(135, 20);
             this.tCity.TabIndex = 11;
             // 
             // tStreet
             // 
-            this.tStreet.Location = new System.Drawing.Point(78, 113);
+            this.tStreet.Location = new System.Drawing.Point(58, 92);
+            this.tStreet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tStreet.Name = "tStreet";
-            this.tStreet.Size = new System.Drawing.Size(179, 22);
+            this.tStreet.Size = new System.Drawing.Size(135, 20);
             this.tStreet.TabIndex = 10;
             // 
             // tMiddlename
             // 
-            this.tMiddlename.Location = new System.Drawing.Point(78, 85);
+            this.tMiddlename.Location = new System.Drawing.Point(58, 69);
+            this.tMiddlename.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tMiddlename.Name = "tMiddlename";
-            this.tMiddlename.Size = new System.Drawing.Size(179, 22);
+            this.tMiddlename.Size = new System.Drawing.Size(135, 20);
             this.tMiddlename.TabIndex = 9;
             // 
             // tName
             // 
-            this.tName.Location = new System.Drawing.Point(78, 57);
+            this.tName.Location = new System.Drawing.Point(58, 46);
+            this.tName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tName.Name = "tName";
-            this.tName.Size = new System.Drawing.Size(179, 22);
+            this.tName.Size = new System.Drawing.Size(135, 20);
             this.tName.TabIndex = 8;
             // 
             // tSurname
             // 
-            this.tSurname.Location = new System.Drawing.Point(78, 29);
+            this.tSurname.Location = new System.Drawing.Point(58, 24);
+            this.tSurname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tSurname.Name = "tSurname";
-            this.tSurname.Size = new System.Drawing.Size(179, 22);
+            this.tSurname.Size = new System.Drawing.Size(135, 20);
             this.tSurname.TabIndex = 7;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 203);
+            this.label7.Location = new System.Drawing.Point(5, 165);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 17);
+            this.label7.Size = new System.Drawing.Size(45, 13);
             this.label7.TabIndex = 6;
             this.label7.Text = "Индекс";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 172);
+            this.label6.Location = new System.Drawing.Point(4, 140);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 17);
+            this.label6.Size = new System.Drawing.Size(50, 13);
             this.label6.TabIndex = 5;
             this.label6.Text = "Область";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 144);
+            this.label5.Location = new System.Drawing.Point(4, 117);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 17);
+            this.label5.Size = new System.Drawing.Size(37, 13);
             this.label5.TabIndex = 4;
             this.label5.Text = "Город";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 116);
+            this.label4.Location = new System.Drawing.Point(5, 94);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 17);
+            this.label4.Size = new System.Drawing.Size(39, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "Улица";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 88);
+            this.label3.Location = new System.Drawing.Point(5, 72);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 17);
+            this.label3.Size = new System.Drawing.Size(54, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Отчество";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 60);
+            this.label2.Location = new System.Drawing.Point(5, 49);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 17);
+            this.label2.Size = new System.Drawing.Size(29, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Имя";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 32);
+            this.label1.Location = new System.Drawing.Point(4, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 17);
+            this.label1.Size = new System.Drawing.Size(56, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Фамилия";
             // 
@@ -314,9 +332,11 @@
             this.groupBox2.Controls.Add(this.bCreate);
             this.groupBox2.Controls.Add(this.bTable);
             this.groupBox2.Controls.Add(this.tNameTable);
-            this.groupBox2.Location = new System.Drawing.Point(13, 358);
+            this.groupBox2.Location = new System.Drawing.Point(10, 291);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(358, 184);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(268, 150);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Создание Базы Данных";
@@ -324,9 +344,10 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(216, 118);
+            this.label9.Location = new System.Drawing.Point(162, 96);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(133, 17);
+            this.label9.Size = new System.Drawing.Size(103, 13);
             this.label9.TabIndex = 3;
             this.label9.Text = "Название таблицы";
             // 
@@ -335,18 +356,21 @@
             this.groupBox3.Controls.Add(this.bSelectName);
             this.groupBox3.Controls.Add(this.tSelectName);
             this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Location = new System.Drawing.Point(377, 358);
+            this.groupBox3.Location = new System.Drawing.Point(283, 291);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(200, 160);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Size = new System.Drawing.Size(150, 130);
             this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Выбор по имени";
             // 
             // bSelectName
             // 
-            this.bSelectName.Location = new System.Drawing.Point(45, 106);
+            this.bSelectName.Location = new System.Drawing.Point(34, 86);
+            this.bSelectName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bSelectName.Name = "bSelectName";
-            this.bSelectName.Size = new System.Drawing.Size(114, 43);
+            this.bSelectName.Size = new System.Drawing.Size(86, 35);
             this.bSelectName.TabIndex = 2;
             this.bSelectName.Text = "Выбрать";
             this.bSelectName.UseVisualStyleBackColor = true;
@@ -354,17 +378,19 @@
             // 
             // tSelectName
             // 
-            this.tSelectName.Location = new System.Drawing.Point(45, 54);
+            this.tSelectName.Location = new System.Drawing.Point(34, 44);
+            this.tSelectName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tSelectName.Name = "tSelectName";
-            this.tSelectName.Size = new System.Drawing.Size(149, 22);
+            this.tSelectName.Size = new System.Drawing.Size(113, 20);
             this.tSelectName.TabIndex = 1;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 57);
+            this.label8.Location = new System.Drawing.Point(4, 46);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(35, 17);
+            this.label8.Size = new System.Drawing.Size(29, 13);
             this.label8.TabIndex = 0;
             this.label8.Text = "Имя";
             // 
@@ -373,18 +399,21 @@
             this.groupBox4.Controls.Add(this.bSelectCity);
             this.groupBox4.Controls.Add(this.tSelectCity);
             this.groupBox4.Controls.Add(this.label10);
-            this.groupBox4.Location = new System.Drawing.Point(583, 358);
+            this.groupBox4.Location = new System.Drawing.Point(437, 291);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(200, 160);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Size = new System.Drawing.Size(150, 130);
             this.groupBox4.TabIndex = 8;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Выбор по городу";
             // 
             // bSelectCity
             // 
-            this.bSelectCity.Location = new System.Drawing.Point(45, 106);
+            this.bSelectCity.Location = new System.Drawing.Point(34, 86);
+            this.bSelectCity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bSelectCity.Name = "bSelectCity";
-            this.bSelectCity.Size = new System.Drawing.Size(114, 43);
+            this.bSelectCity.Size = new System.Drawing.Size(86, 35);
             this.bSelectCity.TabIndex = 2;
             this.bSelectCity.Text = "Выбрать";
             this.bSelectCity.UseVisualStyleBackColor = true;
@@ -392,31 +421,32 @@
             // 
             // tSelectCity
             // 
-            this.tSelectCity.Location = new System.Drawing.Point(45, 54);
+            this.tSelectCity.Location = new System.Drawing.Point(34, 44);
+            this.tSelectCity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tSelectCity.Name = "tSelectCity";
-            this.tSelectCity.Size = new System.Drawing.Size(149, 22);
+            this.tSelectCity.Size = new System.Drawing.Size(113, 20);
             this.tSelectCity.TabIndex = 1;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(0, 57);
+            this.label10.Location = new System.Drawing.Point(0, 46);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(48, 17);
+            this.label10.Size = new System.Drawing.Size(37, 13);
             this.label10.TabIndex = 0;
             this.label10.Text = "Город";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 537);
+            this.ClientSize = new System.Drawing.Size(800, 436);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.gAddData);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "HRDepartment";
             this.Load += new System.EventHandler(this.Form1_Load);
