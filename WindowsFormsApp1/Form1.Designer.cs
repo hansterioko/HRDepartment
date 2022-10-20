@@ -155,6 +155,7 @@
             this.bOutputAll.TabIndex = 9;
             this.bOutputAll.Text = "Вывод всех";
             this.bOutputAll.UseVisualStyleBackColor = true;
+            this.bOutputAll.Click += new System.EventHandler(this.bOutputAll_Click);
             // 
             // bSelectChange
             // 
@@ -191,6 +192,7 @@
             this.bAdd.TabIndex = 14;
             this.bAdd.Text = "Добавить ";
             this.bAdd.UseVisualStyleBackColor = true;
+            this.bAdd.Click += new System.EventHandler(this.bAdd_Click);
             // 
             // tIndex
             // 
@@ -384,6 +386,7 @@
             this.bSelectCity.TabIndex = 2;
             this.bSelectCity.Text = "Выбрать";
             this.bSelectCity.UseVisualStyleBackColor = true;
+            this.bSelectCity.Click += new System.EventHandler(this.bSelectCity_Click);
             // 
             // tSelectCity
             // 

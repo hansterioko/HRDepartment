@@ -115,6 +115,112 @@ public partial class Form1 : Form
         private void bSelectName_Click(object sender, EventArgs e)
         {
 
+            using (var connection = new SQLiteConnection("Data Source = TestDBSQLite1.db"))
+            {
+                if (tSelectName.Text != "")
+                {
+                    dataGridView1.DataSource = null;
+
+                    dt = new DataTable();
+                    connection.Open();
+                    SQLiteCommand command = new SQLiteCommand("select * from clients where firstname='" + tSelectName.Text + "'", connection);
+                   
+                    tSelectName.Clear();
+
+
+                    SQLiteDataReader dr = command.ExecuteReader();
+
+                    dt.Load(dr);
+
+                    dataGridView1.DataSource = dt;
+                }
+                else
+                    MessageBox.Show("Не введены данные!!!", "Ввод данных", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+            }
+        }
+
+        private void bAdd_Click(object sender, EventArgs e)
+        {
+            if (tSurname.Text != "" && tName.Text != "" && tMiddlename.Text != "" && tStreet.Text != "" && tCity.Text != "" && tState.Text != "" && tIndex.Text != "")
+            {
+                try
+                {
+                    using (var connection = new SQLiteConnection("Data Source = TestDBSQLite1.db"))
+                    {
+                        connection.Open();
+
+                        SQLiteCommand Command = new SQLiteCommand("INSERT INTO clients (lastname, firstname, middlename, adress, city, state, zipcode) VALUES ('" + tSurname.Text + "', '" + tName.Text + "', '" + tMiddlename.Text + "', '" + tStreet.Text + "', '" + tCity.Text + "', '" + tState.Text + "', '" + tIndex.Text + "')", connection);
+
+                        if (Command.ExecuteNonQuery() == 0)
+                        {
+                            MessageBox.Show("Запись не была добавлена!", "Добавление данных", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Запись успешно добавлена!", "Добавление данных", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        ClearBoxes();
+                        LoadTable();
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Добавление данных", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                }
+
+
+            }
+            else
+            {
+                MessageBox.Show("Не заполнены все поля!", "Добавление данных", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+            }
+        }
+
+        private void bSelectCity_Click(object sender, EventArgs e)
+        {
+            using (var connection = new SQLiteConnection("Data Source = TestDBSQLite1.db"))
+            {
+                if (tSelectCity.Text != "")
+                {
+                    dataGridView1.DataSource = null;
+
+                    dt = new DataTable();
+                    connection.Open();
+                    SQLiteCommand command = new SQLiteCommand("select * from clients where city='" + tSelectCity.Text + "'", connection);
+                    tSelectCity.Clear();
+
+
+                    SQLiteDataReader dr = command.ExecuteReader();
+
+                    dt.Load(dr);
+
+                    dataGridView1.DataSource = dt;
+                }
+                else
+                    MessageBox.Show("Не введены данные!!!", "Ввод данных", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+            }
+        }
+
+        private void bOutputAll_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = null;
+
+            dt = new DataTable();
+
+            using (var connection = new SQLiteConnection("Data Source = TestDBSQLite1.db"))
+            {
+                connection.Open();
+                SQLiteCommand command = new SQLiteCommand("select * from clients", connection);
+
+
+
+                SQLiteDataReader dr = command.ExecuteReader();
+
+                dt.Load(dr);
+
+                dataGridView1.DataSource = dt;
+            }
         }
     }
 }
