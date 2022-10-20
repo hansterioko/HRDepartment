@@ -8,9 +8,9 @@ using System.IO;
 
 namespace WindowsFormsApp1
 {
- 
 
-public partial class Form1 : Form
+
+    public partial class Form1 : Form
     {
         public Form1()
         {
@@ -22,7 +22,7 @@ public partial class Form1 : Form
         private string sSql = string.Empty;
         DataTable dt = new DataTable();
         DataSet ds = new DataSet();
-       
+
 
 
         private void LoadTable()
@@ -45,7 +45,7 @@ public partial class Form1 : Form
 
                 dataGridView1.Rows.Remove(dataGridView1.Rows[dataGridView1.Rows.Count - 1]);
             }
-          
+
 
         }
 
@@ -60,7 +60,7 @@ public partial class Form1 : Form
             tIndex.Clear();
         }
 
-      
+
 
         private void bCreate_Click(object sender, EventArgs e)
         {
@@ -77,13 +77,13 @@ public partial class Form1 : Form
             using (SQLiteConnection Connect = new SQLiteConnection(@"Data Source=TestDBSQLite1.db; Version=3;")) // в строке указывается к какой базе подключаемся
             {
                 // строка запроса, который надо будет выполнить
-                string commandText = "CREATE TABLE IF NOT EXISTS ["+tNameTable.Text+"] ( [id] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, [lastname] VARCHAR(255), [firstname] VARCHAR(255), " +
+                string commandText = "CREATE TABLE IF NOT EXISTS [" + tNameTable.Text + "] ( [id] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, [lastname] VARCHAR(255), [firstname] VARCHAR(255), " +
                     "[middlename] VARCHAR(255), [adress] VARCHAR(255), [city] VARCHAR(255), [state] VARCHAR(255), [zipcode] VARCHAR(255))"; // создать таблицу, если её нет
                 SQLiteCommand Command = new SQLiteCommand(commandText, Connect);
                 Connect.Open(); // открыть соединение
                 Command.ExecuteNonQuery(); // выполнить запрос
                 Connect.Close(); // закрыть соединение
-                MessageBox.Show("Таблица "+tNameTable.Text+" в базе данных создана");
+                MessageBox.Show("Таблица " + tNameTable.Text + " в базе данных создана");
             }
         }
 
@@ -220,6 +220,71 @@ public partial class Form1 : Form
                 dt.Load(dr);
 
                 dataGridView1.DataSource = dt;
+            }
+        }
+
+        int id = -1;
+
+        private int CheckCountSelect()
+        {
+            int number = 0;
+
+            for (int i = 0; i < dataGridView1.RowCount; i++)
+            {
+                if (Convert.ToBoolean(dataGridView1.Rows[i].Cells["Select"].Value))
+                {
+                    number++;
+
+                }
+
+            }
+            return number;
+        }
+        private void bSelectChange_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (CheckCountSelect() > 1)
+                {
+                    MessageBox.Show("Выберите только 1 значение", "Изменение данных", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
+                }
+                else
+                {
+                    using (var connection = new SQLiteConnection("Data Source =TestDBSQLite1.db"))
+                    {
+
+                        connection.Open();
+                        if (dataGridView1.Rows[0].Cells[2].Value == null)
+                        {
+                            MessageBox.Show("Изменение невозможно,т.к в таблице нет строк для изменения!", "Изменение строк", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                        int num = -1;
+                        for (int i = 0; i < dataGridView1.RowCount; i++)
+                        {
+                            if (Convert.ToBoolean(dataGridView1.Rows[i].Cells["Select"].Value))
+                            {
+                                id = Convert.ToInt32(dataGridView1.Rows[i].Cells["id"].Value);
+                                num = i;
+                            }
+                        }
+
+                        tSurname.Text = dataGridView1.Rows[num].Cells["lastname"].Value.ToString();
+                        tName.Text = dataGridView1.Rows[num].Cells["firstname"].Value.ToString();
+                        tMiddlename.Text = dataGridView1.Rows[num].Cells["middlename"].Value.ToString();
+                        tStreet.Text = dataGridView1.Rows[num].Cells["adress"].Value.ToString();
+                        tCity.Text = dataGridView1.Rows[num].Cells["city"].Value.ToString();
+                        tState.Text = dataGridView1.Rows[num].Cells["state"].Value.ToString();
+                        tIndex.Text = dataGridView1.Rows[num].Cells["zipcode"].Value.ToString();
+
+                        bChange.Enabled = true;
+                        bSelectChange.Enabled = false;
+                    }
+                }
+
+            }
+            catch (Exception ex) 
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }
