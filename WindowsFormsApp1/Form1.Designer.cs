@@ -79,7 +79,6 @@
             this.bCreate.TabIndex = 0;
             this.bCreate.Text = "Создание БД";
             this.bCreate.UseVisualStyleBackColor = true;
-         
             // 
             // bTable
             // 
@@ -90,7 +89,6 @@
             this.bTable.TabIndex = 1;
             this.bTable.Text = "Создание таблицы:";
             this.bTable.UseVisualStyleBackColor = true;
-       
             // 
             // dataGridView1
             // 
@@ -157,7 +155,6 @@
             this.bOutputAll.TabIndex = 9;
             this.bOutputAll.Text = "Вывод всех";
             this.bOutputAll.UseVisualStyleBackColor = true;
-          
             // 
             // bSelectChange
             // 
@@ -167,7 +164,6 @@
             this.bSelectChange.TabIndex = 17;
             this.bSelectChange.Text = "Выбрать для изменения";
             this.bSelectChange.UseVisualStyleBackColor = true;
-      
             // 
             // bChange
             // 
@@ -177,7 +173,6 @@
             this.bChange.TabIndex = 16;
             this.bChange.Text = "Изменить";
             this.bChange.UseVisualStyleBackColor = true;
-          
             // 
             // bDelete
             // 
@@ -187,7 +182,6 @@
             this.bDelete.TabIndex = 15;
             this.bDelete.Text = "Удалить";
             this.bDelete.UseVisualStyleBackColor = true;
-    
             // 
             // bAdd
             // 
@@ -197,7 +191,6 @@
             this.bAdd.TabIndex = 14;
             this.bAdd.Text = "Добавить ";
             this.bAdd.UseVisualStyleBackColor = true;
-         
             // 
             // tIndex
             // 
@@ -353,7 +346,7 @@
             this.bSelectName.TabIndex = 2;
             this.bSelectName.Text = "Выбрать";
             this.bSelectName.UseVisualStyleBackColor = true;
-          
+            this.bSelectName.Click += new System.EventHandler(this.bSelectName_Click);
             // 
             // tSelectName
             // 
@@ -391,7 +384,6 @@
             this.bSelectCity.TabIndex = 2;
             this.bSelectCity.Text = "Выбрать";
             this.bSelectCity.UseVisualStyleBackColor = true;
-        
             // 
             // tSelectCity
             // 

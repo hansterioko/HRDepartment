@@ -27,7 +27,7 @@ public partial class Form1 : Form
 
         private void LoadTable()
         {
-            using (SQLiteConnection connection = new SQLiteConnection(@"Data Source=C:\3 курс\TestDBSQLite1.db; Version=3;"))
+            using (SQLiteConnection connection = new SQLiteConnection(@"Data Source=TestDBSQLite1.db; Version=3;"))
             {
                 connection.Open();
                 SQLiteCommand cmd = new SQLiteCommand("SELECT * from clients", connection);
@@ -64,9 +64,9 @@ public partial class Form1 : Form
 
         private void bCreate_Click(object sender, EventArgs e)
         {
-            if (!File.Exists(@"C:\3 курс\TestDBSQLite1.db")) // если базы данных нету, то создать БД
+            if (!File.Exists(@"TestDBSQLite1.db")) // если базы данных нету, то создать БД
             {
-                SQLiteConnection.CreateFile(@"C:\3 курс\TestDBSQLite1.db"); // создать базу данных, по указанному пути содаётся пустой файл базы данных
+                SQLiteConnection.CreateFile(@"TestDBSQLite1.db"); // создать базу данных, по указанному пути содаётся пустой файл базы данных
                 MessageBox.Show("База данных создана");
 
             }
@@ -74,7 +74,7 @@ public partial class Form1 : Form
 
         private void bTable_Click(object sender, EventArgs e)
         {
-            using (SQLiteConnection Connect = new SQLiteConnection(@"Data Source=C:\3 курс\TestDBSQLite1.db; Version=3;")) // в строке указывается к какой базе подключаемся
+            using (SQLiteConnection Connect = new SQLiteConnection(@"Data Source=TestDBSQLite1.db; Version=3;")) // в строке указывается к какой базе подключаемся
             {
                 // строка запроса, который надо будет выполнить
                 string commandText = "CREATE TABLE IF NOT EXISTS ["+tNameTable.Text+"] ( [id] INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, [lastname] VARCHAR(255), [firstname] VARCHAR(255), " +
@@ -112,6 +112,9 @@ public partial class Form1 : Form
             dataGridView1.Columns["zipcode"].ReadOnly = true;
         }
 
-       
+        private void bSelectName_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

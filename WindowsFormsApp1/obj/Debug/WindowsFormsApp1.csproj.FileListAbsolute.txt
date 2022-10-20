@@ -56,3 +56,23 @@ C:\3 курс\Коллективная разработка программны
 C:\3 курс\Коллективная разработка программных продуктов\laba3\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.xml
 C:\3 курс\Коллективная разработка программных продуктов\laba3\WindowsFormsApp1\bin\Debug\System.Data.SQLite.xml
 C:\3 курс\Коллективная разработка программных продуктов\laba3\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\kom_3\Documents\GitHub\HRDepartment\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\kom_3\Documents\GitHub\HRDepartment\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\kom_3\Documents\GitHub\HRDepartment\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\kom_3\Documents\GitHub\HRDepartment\WindowsFormsApp1\bin\Debug\EntityFramework.dll
+C:\Users\kom_3\Documents\GitHub\HRDepartment\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kom_3\Documents\GitHub\HRDepartment\WindowsFormsApp1\bin\Debug\System.Data.SQLite.dll
+C:\Users\kom_3\Documents\GitHub\HRDepartment\WindowsFormsApp1\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\kom_3\Documents\GitHub\HRDepartment\WindowsFormsApp1\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\kom_3\Documents\GitHub\HRDepartment\WindowsFormsApp1\bin\Debug\EntityFramework.xml
+C:\Users\kom_3\Documents\GitHub\HRDepartment\WindowsFormsApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kom_3\Documents\GitHub\HRDepartment\WindowsFormsApp1\bin\Debug\System.Data.SQLite.xml
+C:\Users\kom_3\Documents\GitHub\HRDepartment\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\kom_3\Documents\GitHub\HRDepartment\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\kom_3\Documents\GitHub\HRDepartment\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\kom_3\Documents\GitHub\HRDepartment\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\kom_3\Documents\GitHub\HRDepartment\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\kom_3\Documents\GitHub\HRDepartment\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\kom_3\Documents\GitHub\HRDepartment\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\kom_3\Documents\GitHub\HRDepartment\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\kom_3\Documents\GitHub\HRDepartment\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
